@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link, withRouter } from 'react-router-dom';
-import ContactService from '../../dataservices/ContactService';
+import ContactService from '../../services/ContactService';
 import binImg from '../../assets/img/icons/bin.png';
 import backImg from '../../assets/img/icons/back-arrow.png';
 import './ContactEditPage.scss'
