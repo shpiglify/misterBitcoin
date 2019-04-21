@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import ContactPreview from '../ContactPreview';
+import ContactPreview from '../ContactPreview/ContactPreview';
 import newUser from '../../assets/img/icons/new-user.png';
 import './ContactList.scss'
 
@@ -18,8 +18,8 @@ export default class ContactList extends Component {
       <section>
         <div className="new-contact">
           <Link to={`/contact/edit`} >
-            <div>
-              <img src={newUser} alt="" />
+            <div style={{color:'white'}} >
+              +
             </div>
           </Link>
         </div>
