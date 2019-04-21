@@ -5,7 +5,7 @@ import AppStore from '../store/AppStore';
 
 import Nav from './Nav/Nav'
 import ContactPage from '../pages/ContactPage';
-import HomePage from '../pages/HomePage';
+import HomePage from '../pages/HomePage/HomePage';
 import StatisticPage from '../pages/StatisticPage';
 import ContactDetailsPage from '../pages/ContactDetailsPage/ContactDetailsPage';
 import ContactEditPage from '../pages/ContactEditPage/ContactEditPage';

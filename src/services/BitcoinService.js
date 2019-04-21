@@ -7,11 +7,11 @@ import transactionsPrice from './data/transactionsPrice.json';
 //         .then(res => res.data)
 // }
 
-async function getRate(coins) {
+async function getRate() {
     // WHEN active dont forget to UNmark the IMPORT AXIOS
     // var value = await axios.get(`https://blockchain.info/tobtc?currency=USD&value=${coins}`)
     // return value.data;
-    return Promise.resolve(coins*0.0001990188);
+    return Promise.resolve(0.0001990188);
 }
 
 // IN PROMISE THEN

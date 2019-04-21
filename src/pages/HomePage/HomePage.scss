@@ -1,0 +1,56 @@
+@import '../../assets/scss/vars.scss';
+
+.home-page{
+    h1{
+        text-align: left;
+        font-weight: 100;
+        font-size: 35px;
+        padding: 10px 0px;
+        margin: 0px;
+        border-bottom: 1px solid #83909757;
+    }
+ main{
+    display:flex;
+    justify-content: space-between;
+    margin: 10px 0px 32px;
+   
+    div.balance{
+        display:flex;
+        flex-direction:column;
+        align-items: flex-start;
+        div:first-child{
+            color:$text-scondary;
+        }
+        div:nth-child(2){
+            font-size:20px;
+            span{
+                color:$text-highlight;
+            }
+        }
+        div:nth-child(3){
+            font-size:20px;
+            span{
+                color:$text-scondary;
+            }
+        }
+
+    }
+    div.rate{
+        display:flex;
+        flex-direction:column;
+        align-items: flex-end;
+        div:nth-child(1){
+            color:$text-scondary
+        }
+        div:nth-child(2){
+            font-size: 37px;
+        }
+
+    }
+ }
+ .statistic-page{
+    background-color: #00000066;
+    padding-top:15px;
+ }
+
+}
