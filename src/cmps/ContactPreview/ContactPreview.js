@@ -21,13 +21,13 @@ class ContactPreview extends Component {
 			<Link to={`/contact/${this.props.contact._id}`} >
 				<li>
 					<div>
-						<img height="26" src={binImg} title="Delete"
-							onClick={(ev) => this.removeClicked(ev)} alt="" />
+						{/* <img height="26" src={binImg} title="Delete"
+							onClick={(ev) => this.removeClicked(ev)} alt="" /> */}
 
 						<img className="profile" height="60" src="/assets/img/profiles/profile-placeholder.jpg" alt="" title={userName} />
 
-						<img height="26" src={editImg} title="Edit"
-							onClick={(ev) => this.editClicked(ev)} alt="" />
+						{/* <img height="26" src={editImg} title="Edit"
+							onClick={(ev) => this.editClicked(ev)} alt="" /> */}
 					</div>
 					<div>
 						<div>{this.props.contact.userName}</div>

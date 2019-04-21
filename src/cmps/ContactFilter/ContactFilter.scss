@@ -1,15 +1,19 @@
 @import '../../assets/scss/vars';
 
 .filter-container {
-  margin: 6px 0px 6px 0px;
+  
   input {
     font-size: 1.1rem;
-    padding: 2px 4px;
-    border: 0.5px solid rgb(68, 68, 68);
-    background-color: $clr5;
+    width: 100%;
+    border-radius: 0;
+    height: 51px;
+    padding: 8px 16px;
+    background-color: #00000096;
     &:focus {
-      background-color: #ebf4fa;
-      outline: 1px solid rgba(0, 0, 0, 0);
+      background-color: #00000096;
+      border: 1px solid $primary-color;
+      color:$text-primary;
+      outline: 1px solid rgba(255, 255, 255, 0);
     }
   }
 }
