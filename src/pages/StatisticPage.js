@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import Chart from '../cmps/Chart'
 import BitcoinService from '../services/BitcoinService';
 
-export default class HomePage extends Component {
+export default class StatisticPage extends Component {
     state = {
         chart1: null,
         chart2: null
@@ -21,7 +21,7 @@ export default class HomePage extends Component {
         this.setState({
             chart1: {
                 data: marketChart.values.map(val => val.y),
-                title: marketChart.userName,
+                title: marketChart.name,
                 description: marketChart.description,
                 color: '#feb236'
             }
@@ -37,8 +37,8 @@ export default class HomePage extends Component {
     }
     render() {
         return (
-            <section>
-                <h1>Statistic Page</h1>
+            <section className="statistic-page">
+                
                 {this.state.chart1 && <Chart chart={this.state.chart1} />}
                 {this.state.chart2 && <Chart chart={this.state.chart2} />}
             </section>
