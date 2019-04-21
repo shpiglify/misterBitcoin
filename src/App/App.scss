@@ -1,11 +1,15 @@
 .App {
   background-image: url(/assets/img/background/background-blue.jpg);
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
   text-align: center;
   max-width: 100%;
+  
 }
 
-.App > div {
+.App > div,.App > section {
   flex-grow: 1;
+ width:100%;
+ max-width: 480px;
+  margin: 0 auto;
 }

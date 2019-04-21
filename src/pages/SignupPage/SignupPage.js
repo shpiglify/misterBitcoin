@@ -41,7 +41,7 @@ class SignupPage extends Component {
 
   render = () => (
     <div className="signup-page">
-      <h1>Login</h1>
+      <h1>Welcome</h1>
       <img src="/assets/img/design/wallet.png" alt="bitcoin" height="100" width="100" />
 
       <form className="signup-form">
