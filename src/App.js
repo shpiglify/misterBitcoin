@@ -5,13 +5,11 @@ import './assets/css/App.scss';
 import Router from './Router';
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Router/>
-      </div>
-    );
-  }
+  render = () => (
+    <div className="App flex flex-col">
+      <Router />
+    </div>
+  );
 }
 
 export default observer(App);

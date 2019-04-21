@@ -3,6 +3,12 @@
   text-decoration: none;
 }
 
+html,
+body,
+.App {
+  height: 100%;
+}
+
 html {
   color: $clr0;
   font-family: sans-serif, Arial, serif;
@@ -11,16 +17,18 @@ html {
 body {
   margin: auto;
   font-size: 16px;
-  height: 100%;
   background-color: $clr5;
 }
 
-// img {
-//     width:100%;
-// }
+#root {
+  height: 100%;
+}
 
 .App {
   text-align: center;
   max-width: 100%;
-//   overflow-x: hidden;
+}
+
+.App > div {
+  flex-grow: 1;
 }
