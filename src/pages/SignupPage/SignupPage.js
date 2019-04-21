@@ -6,11 +6,7 @@ import './SignupPage.scss';
 class SignupPage extends Component {
   state = {
     userName: '',
-  }
-
-  handleOnSubmit = () => {
-    this.props.UserStore.signupUser(this.state.userName)
-      .then(() => this.props.history.push(`/`))
+    password: '',
   }
 
   handleOnUserNameChange = (e) => {
@@ -20,36 +16,41 @@ class SignupPage extends Component {
   handleOnPasswordChange = (e) => {
     this.setState({ password: e.target.value })
   }
+  
+  handleLogin = () => {
+    const { userName, password } = this.state
+    const credentials = { userName, password }
+
+    this.props.UserStore.login(credentials)
+      .then(() => {
+        this.props.history.push(`/`)
+      })
+  }
+
+  handleSignup = () => {
+    const { userName, password } = this.state
+    const credentials = { userName, password }
+
+    this.props.UserStore.signupUser(credentials)
+      .then(() => {
+        this.props.history.push(`/`)
+      })
+  }
 
   render = () => (
     <div className="signup-page">
-      <h1>Signup Page</h1>
+      <h1>Login</h1>
       <img src="/assets/img/design/wallet.png" alt="bitcoin" height="100" width="100" />
 
-      <form className="signup-form" onSubmit={this.handleOnSubmit}>
+      <form className="signup-form">
         <input onChange={this.handleOnUserNameChange} placeholder="User Name" />
-        <input onChange={this.handleOnPasswordChange} placeholder="Password" />
-        <input type="submit" value="Sign Up" />
-      </form>
+        <input onChange={this.handleOnPasswordChange} type="password" placeholder="Password" />
 
-      {/* <Formik
-        initialValues={{ name: '', email: '', password: '', city: '' }}
-        onSubmit={(values, actions) => {
-          this.props.UserStore.signupUser(values.name)
-            .then(() => this.props.history.push(`/`))
-        }}
-      >
-        {formikProps => (
-          <Form>
-            <Field name="name" autoFocus={true} type="text" /><br />
-            <input type="submit" value="Submit" />&nbsp;
-              <input type="reset" value="Reset"
-              onClick={formikProps.handleReset}
-              disabled={!formikProps.dirty || formikProps.isSubmitting}
-            />
-          </Form>
-        )}
-      </Formik> */}
+        <div className="btn-container">
+          <button className="btn-full" onClick={this.handleLogin}>Login</button>
+          <button className="btn-flat" onClick={this.handleSignup}>Sign Up</button>
+        </div>
+      </form>
     </div>
   );
 }
