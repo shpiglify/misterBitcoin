@@ -1,5 +1,4 @@
 import { decorate, observable, computed, action } from 'mobx';
-
 import UserService from '../services/UserService';
 
 class UserModule {
@@ -10,8 +9,15 @@ class UserModule {
             .then((user) => user ? this.setUser(user) : '')
     }
 
-    signupUser(name) {
-        return UserService.signup(name)
+    login(credentials) {
+        return UserService.login(credentials)
+            .then((user) => {
+                this.setUser(user)
+            })
+    }
+
+    signupUser(credentials) {
+        return UserService.signup(credentials)
             .then((user) => {
                 this.setUser(user)
             })
@@ -42,8 +48,5 @@ decorate(UserModule,
         getCurrUser: computed,
         getThreeMoves: computed
     })
-
-// const userStore = new UserModule();
-// export default userStore;
 
 export default UserModule;

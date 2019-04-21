@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: gray;
 }
 
 .signup-form {
@@ -13,6 +12,15 @@
   padding: 16px;
 }
 
-.signup-form input {
+.signup-form input:not(:last-child) {
+  margin-bottom: 16px;
+}
 
+.signup-page .btn-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.signup-page .btn-container button {
+  width: 100px;
 }

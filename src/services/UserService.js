@@ -1,26 +1,6 @@
 import StorageService from './StorageService';
 import ContactService from './ContactService';
 
-// var users = [
-//     {
-//         name: "user1",
-//         coins: 100,
-//         moves: []
-//     }, {
-//         name: "user2",
-//         coins: 200,
-//         moves: []
-//     }, {
-//         name: "user3",
-//         coins: 300,
-//         moves: []
-//     }, {
-//         name: "user4",
-//         coins: 400,
-//         moves: []
-//     }
-// ];
-
 const USER_KEY = 'user-react';
 const USERS_KEY = 'users-react';
 const MOVES_KEY = 'moves-react';
@@ -36,7 +16,7 @@ function getUser() {
 function getMovesByContactId(id) {
     var moves = StorageService.load(MOVES_KEY);
     if (moves && moves.length) {
-        var filterMoves = moves.filter((move) => move.toId === id && move.fromUser === gUser.name)
+        var filterMoves = moves.filter((move) => move.toId === id && move.fromUser === gUser.userName)
         return Promise.resolve(filterMoves);
     } else {
         return Promise.resolve([]);
@@ -60,26 +40,32 @@ function _getMoves() {
     return Promise.resolve(moves);
 }
 
-function signup(name) {
+function login({ userName, password }) {
     gUsers = StorageService.load(USERS_KEY);
-    if (!gUsers) gUsers = [];
-    var userStorage = gUsers.find((user) => user.name === name)
+    const userStorage = gUsers.find((user) => user.userName === userName && user.password === password)
+
     if (userStorage) {
         gUser = userStorage;
         StorageService.store(USER_KEY, gUser);
         return Promise.resolve(gUser);
-    } else {
-        var newUser = {
-            name: name,
-            coins: 1000,
-            moves: []
-        }
-        gUser = newUser;
-        StorageService.store(USER_KEY, gUser);
-        gUsers.push(newUser)
-        StorageService.store(USERS_KEY, gUsers);
-        return Promise.resolve(newUser);
     }
+}
+
+function signup({ userName, password }) {
+    gUsers = StorageService.load(USERS_KEY);
+    if (!gUsers) gUsers = [];
+
+    const newUser = {
+        userName,
+        password,
+        coins: 1000,
+        moves: []
+    }
+    gUser = newUser;
+    StorageService.store(USER_KEY, gUser);
+    gUsers.push(newUser)
+    StorageService.store(USERS_KEY, gUsers);
+    return Promise.resolve(newUser);
 }
 
 function _updateUser(newMove, amount) {
@@ -88,7 +74,7 @@ function _updateUser(newMove, amount) {
         gUser.coins = newBalance;
         gUser.moves.unshift(newMove);
         StorageService.store(USER_KEY, gUser);
-        var idx = gUsers.findIndex((user) => user.name === gUser.name);
+        var idx = gUsers.findIndex((user) => user.userName === gUser.userName);
         if (idx >= 0) {
             gUsers[idx] = gUser;
             StorageService.store(USERS_KEY, gUsers);
@@ -99,16 +85,16 @@ function _updateUser(newMove, amount) {
 }
 
 function addMove(contact, amount) {
-    if(contact.coins){
+    if (contact.coins) {
         contact.coins += Number(amount);
-    }else{
+    } else {
         contact.coins = Number(amount);
     }
     ContactService.saveContact(contact);
     var newMove = {
-        fromUser: (gUser) ? gUser.name : 'Guest',
+        fromUser: (gUser) ? gUser.userName : 'Guest',
         toId: contact._id,
-        to: contact.name,
+        to: contact.userName,
         at: new Date().toLocaleString(),
         createTime: Date.now(),
         amount: amount
@@ -138,6 +124,7 @@ function getEmptyMove() {
 
 export default {
     getUser,
+    login,
     signup,
     addMove,
     getEmptyMove,
