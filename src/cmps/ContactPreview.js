@@ -15,6 +15,7 @@ class ContactPreview extends Component {
 		this.props.onEmitRemove(this.props.contact._id)
 	}
 	render() {
+		// var urlImg = `${this.props.contact.img}`;
 		var urlImg = `${this.props.contact.img}`;
 		var userName = `${this.props.contact.name}`;
 		return (
@@ -25,7 +26,7 @@ class ContactPreview extends Component {
 						<img height="26" src={binImg} title="Delete"
 							onClick={(ev) => this.removeClicked(ev)} alt="" />
 
-						<img height="60" src={urlImg} alt="" title={userName} />
+						<img height="60" src="/assets/img/profiles/profile-placeholder.jpg" alt="" title={userName} />
 
 						<img height="26" src={editImg} title="Edit"
 							onClick={(ev) => this.editClicked(ev)} alt="" />
