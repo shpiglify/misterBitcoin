@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import ContactList from '../cmps/ContactList';
-import ContactFilter from '../cmps/ContactFilter';
+import ContactList from '../cmps/ContactList/ContactList';
+import ContactFilter from '../cmps/ContactFilter/ContactFilter';
 
 import ContactService from '../services/ContactService';
 
@@ -28,7 +28,6 @@ export default class ContactPage extends Component {
     }
 
     removeContact = (id) => {
-        console.log('Remove conatact id:', id);
         ContactService.deleteContact(id)
             .then((updateContacts) => {
                 this.setState({ contacts: updateContacts })

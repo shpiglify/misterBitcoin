@@ -1,0 +1,19 @@
+.user-details {
+  margin: 10px 20px 0 20px;
+  .user-img {
+    flex-grow: 1;
+  }
+  .details {
+    flex-grow: 1;
+    margin: auto;
+    text-align: left;
+  }
+}
+
+.options {
+  width: 200px;
+  margin: 10px auto;
+  img {
+    cursor: pointer;
+  }
+}

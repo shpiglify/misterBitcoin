@@ -3,17 +3,18 @@ import React, { Component } from 'react';
 import { Link, withRouter } from 'react-router-dom';
 
 // CMPS
-import MovesList from '../cmps/MovesList';
-import TransferFund from '../cmps/TransferFund';
+import MovesList from '../../cmps/MovesList';
+import TransferFund from '../../cmps/TransferFund';
 
 // SERVISES
-import ContactService from '../services/ContactService';
-import UserService from '../services/UserService';
+import ContactService from '../../services/ContactService';
+import UserService from '../../services/UserService';
 
 // IMAGES
-import editImg from '../assets/img/icons/edit.png';
-import menuImg from '../assets/img/icons/menu.png';
-import backImg from '../assets/img/icons/back-arrow.png';
+import editImg from '../../assets/img/icons/edit.png';
+import menuImg from '../../assets/img/icons/menu.png';
+import backImg from '../../assets/img/icons/back-arrow.png';
+import './ContactDetailsPage.scss'
 
 class ContactDetailsPage extends Component {
     state = {

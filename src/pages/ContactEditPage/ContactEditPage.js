@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
-// import PropTypes from 'prop-types';
 import { Link, withRouter } from 'react-router-dom';
-
-import ContactService from '../services/ContactService';
-
-import binImg from '../assets/img/icons/bin.png';
-import backImg from '../assets/img/icons/back-arrow.png';
-
+import ContactService from '../../dataservices/ContactService';
+import binImg from '../../assets/img/icons/bin.png';
+import backImg from '../../assets/img/icons/back-arrow.png';
+import './ContactEditPage.scss'
 
 class ContactEditPage extends Component {
   state = {
@@ -14,17 +11,7 @@ class ContactEditPage extends Component {
     isAddNew: true,
     isNameValid: true
   }
-  // async componentDidMount() {
-  //     const id = this.props.match.params.id;
-  //     if (id) {
-  //         this.setState({
-  //             contact: await ContactService.getContactById(id),
-  //             isAddNew: false
-  //         })
-  //     } else {
-  //         this.setState({ contact: ContactService.getEmptyContact() })
-  //     }
-  // }
+
   componentDidMount() {
     const id = this.props.match.params.id;
     if (id) {
@@ -35,20 +22,18 @@ class ContactEditPage extends Component {
     }
   }
 
-  componentWillUnmount() { // ON DESTROY
-
-  }
-
   setName = (ev) => {
     var contact = { ...this.state.contact };
     contact.name = ev.target.value;
     this.setState({ contact, isNameValid: true });
   }
+
   setEmail = (ev) => {
     var contact = { ...this.state.contact };
     contact.email = ev.target.value;
     this.setState({ contact });
   }
+
   setPhone = (ev) => {
     var contact = { ...this.state.contact };
     contact.phone = ev.target.value;
@@ -59,10 +44,8 @@ class ContactEditPage extends Component {
     ev.preventDefault();
     if (this.state.contact.name === '') {
       this.setState({ isNameValid: false })
-      console.log('wrongggg')
     } else {
       this.setState({ isNameValid: true })
-      console.log('okkkkk')
       ContactService.saveContact(this.state.contact)
         .then(() => this.props.history.push(`/contact`))
     }

@@ -94,7 +94,7 @@ function _updateUser(newMove, amount) {
             StorageService.store(USERS_KEY, gUsers);
         }
     } else {
-        console.log('problem - try to reduce balance from no user')
+        // problem - try to reduce balance from no user
     }
 }
 

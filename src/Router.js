@@ -9,8 +9,8 @@ import AppStore from './store/AppStore';
 import ContactPage from './pages/ContactPage';
 import HomePage from './pages/HomePage';
 import StatisticPage from './pages/StatisticPage';
-import ContactDetailsPage from './pages/ContactDetailsPage';
-import ContactEditPage from './pages/ContactEditPage';
+import ContactDetailsPage from './pages/ContactDetailsPage/ContactDetailsPage';
+import ContactEditPage from './pages/ContactEditPage/ContactEditPage';
 import SignupPage from './pages/SignupPage/SignupPage';
 import UserDetailsPage from './pages/UserDetailsPage';
 

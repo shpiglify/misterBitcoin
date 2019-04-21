@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-
-import ContactPreview from '../cmps/ContactPreview';
-
-import newUser from '../assets/img/icons/new-user.png';
+import ContactPreview from '../ContactPreview';
+import newUser from '../../assets/img/icons/new-user.png';
+import './ContactList.scss'
 
 export default class ContactList extends Component {
   emitRemoveContact = (id) => {
-    console.log('send to remove - Contact Page', id);
     this.props.onRemove(id)
   }
   render() {
