@@ -9,11 +9,6 @@ import TransferFund from '../../cmps/TransferFund/TransferFund';
 // SERVISES
 import ContactService from '../../services/ContactService';
 import UserService from '../../services/UserService';
-
-// IMAGES
-import editImg from '../../assets/img/icons/edit.png';
-import menuImg from '../../assets/img/icons/menu.png';
-import backImg from '../../assets/img/icons/back-arrow.png';
 import './ContactDetailsPage.scss'
 
 class ContactDetailsPage extends Component {
@@ -66,7 +61,9 @@ class ContactDetailsPage extends Component {
 							<h1>{this.state.contact.userName}</h1>
 							<h2>{this.state.contact.phone}</h2>
 							<div>{this.state.contact.email}</div>
-							<div>{this.state.contact.coins}</div>
+							{this.state.contact.coins && (
+								<div className="coin-counter">💰 {this.state.contact.coins}</div>
+							)}
 						</div>
 					}
 				</div>
