@@ -9,9 +9,6 @@ export default class HomePage extends Component {
         chart2: null
     }
     async componentDidMount() {
-        // var marketChart = await BitcoinService.getMarketPrice()
-        // var transactionsChart = await BitcoinService.getConfirmedTransactions()
-
         const marketPromise = BitcoinService.getMarketPrice();
         const transactionsPromise = BitcoinService.getConfirmedTransactions();
         

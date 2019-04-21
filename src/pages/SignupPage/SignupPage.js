@@ -23,7 +23,7 @@ class SignupPage extends Component {
 
     this.props.UserStore.login(credentials)
       .then(() => {
-        this.props.history.push(`/`)
+        this.props.history.push('/')
       })
   }
 
