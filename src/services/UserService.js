@@ -40,16 +40,23 @@ function _getMoves() {
     return Promise.resolve(moves);
 }
 
+function logout() {
+    gUser = ''
+    StorageService.store(USER_KEY, gUser);
+    return Promise.resolve()
+}
+
 function login({ userName, password }) {
     gUsers = StorageService.load(USERS_KEY);
+    if (!gUsers) gUsers = [];
     const userStorage = gUsers.find((user) => user.userName === userName && user.password === password)
 
     if (userStorage) {
-        console.log('great login', { userStorage })
         gUser = userStorage;
         StorageService.store(USER_KEY, gUser);
         return Promise.resolve(gUser);
     }
+    return Promise.resolve()
 }
 
 function signup({ userName, password }) {
@@ -75,7 +82,7 @@ function _updateUser(newMove, amount) {
         gUser.coins = newBalance;
         gUser.moves.unshift(newMove);
         StorageService.store(USER_KEY, gUser);
-        var idx = gUsers.findIndex((user) => user.userName === gUser.userName);
+        var idx = Array.isArray(gUsers) ? gUsers.findIndex((user) => user.userName === gUser.userName) : null;
         if (idx >= 0) {
             gUsers[idx] = gUser;
             StorageService.store(USERS_KEY, gUsers);
@@ -125,6 +132,7 @@ function getEmptyMove() {
 
 export default {
     getUser,
+    logout,
     login,
     signup,
     addMove,

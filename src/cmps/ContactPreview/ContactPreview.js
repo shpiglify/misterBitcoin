@@ -5,8 +5,6 @@ import editImg from '../../assets/img/icons/edit.png';
 import binImg from '../../assets/img/icons/bin.png';
 import './ContactPreview.scss'
 
-
-// export default class ContactPreview extends Component {
 class ContactPreview extends Component {
 	editClicked = (ev) => {
 		ev.preventDefault()
@@ -17,14 +15,11 @@ class ContactPreview extends Component {
 		this.props.onEmitRemove(this.props.contact._id)
 	}
 	render() {
-		console.log(this.props.contact)
-		// var urlImg = `${this.props.contact.img}`;
-		var urlImg = `${this.props.contact.img}`;
-		var userName = `${this.props.contact.userName}`;
+		const userName = this.props.contact.userName;
+
 		return (
 			<Link to={`/contact/${this.props.contact._id}`} >
 				<li>
-					{/* <img height="26" src={require('../assets/img/icons/edit.png')}/> */}
 					<div>
 						<img height="26" src={binImg} title="Delete"
 							onClick={(ev) => this.removeClicked(ev)} alt="" />

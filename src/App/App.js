@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { observer } from 'mobx-react';
 import './App.scss';
 
-import Router from '../Router';
+import Router from '../Router/Router';
 
 class App extends Component {
   render = () => (

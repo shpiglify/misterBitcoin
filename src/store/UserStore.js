@@ -6,13 +6,21 @@ class UserModule {
 
     loadUser() {
         return UserService.getUser()
-            .then((user) => user ? this.setUser(user) : '')
+            .then((user) => {
+                this.setUser(user)
+            })
+    }
+
+    logout() {
+        return UserService.logout()
+            .then(() => {
+                this.setUser()
+            })
     }
 
     login(credentials) {
         return UserService.login(credentials)
             .then((user) => {
-                console.log('setting user', { user })
                 this.setUser(user)
             })
     }
@@ -25,7 +33,7 @@ class UserModule {
     }
 
     setUser(user) {
-        this.currUser = JSON.parse(JSON.stringify(user));
+        this.currUser = user ? JSON.parse(JSON.stringify(user)) : user;
     }
 
     get getCurrUser() {
