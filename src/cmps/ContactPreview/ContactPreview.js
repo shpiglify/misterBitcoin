@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Link, withRouter } from 'react-router-dom';
-import editImg from '../assets/img/icons/edit.png';
-import binImg from '../assets/img/icons/bin.png';
+import editImg from '../../assets/img/icons/edit.png';
+import binImg from '../../assets/img/icons/bin.png';
+import './ContactPreview.scss'
+
 
 // export default class ContactPreview extends Component {
 class ContactPreview extends Component {
@@ -15,6 +17,7 @@ class ContactPreview extends Component {
 		this.props.onEmitRemove(this.props.contact._id)
 	}
 	render() {
+		console.log(this.props.contact)
 		// var urlImg = `${this.props.contact.img}`;
 		var urlImg = `${this.props.contact.img}`;
 		var userName = `${this.props.contact.name}`;
@@ -22,16 +25,20 @@ class ContactPreview extends Component {
 			<Link to={`/contact/${this.props.contact._id}`} >
 				<li>
 					{/* <img height="26" src={require('../assets/img/icons/edit.png')}/> */}
-					<div className="flex wrap space-even align-center">
+					<div>
 						<img height="26" src={binImg} title="Delete"
 							onClick={(ev) => this.removeClicked(ev)} alt="" />
 
-						<img height="60" src="/assets/img/profiles/profile-placeholder.jpg" alt="" title={userName} />
+						<img className="profile" height="60" src="/assets/img/profiles/profile-placeholder.jpg" alt="" title={userName} />
 
 						<img height="26" src={editImg} title="Edit"
 							onClick={(ev) => this.editClicked(ev)} alt="" />
 					</div>
+					<div>
 					<div>{this.props.contact.name}</div>
+					<div className="phone">{this.props.contact.phone}</div>
+					</div>
+					
 				</li>
 			</Link>
 		)
