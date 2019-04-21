@@ -22,7 +22,7 @@ class UserDetailsPage extends Component {
 
         {this.state.currUser &&
           <div>
-            <div>{this.state.currUser.name}</div>
+            <div>{this.state.currUser.userName}</div>
             <div>{this.state.currUser.coins}</div>
             <div>{this.state.currUser.coins < 0 &&
               <div>
@@ -32,7 +32,7 @@ class UserDetailsPage extends Component {
             }</div>
             <div>
               <MovesList moves={this.state.currUser.moves}
-                title={`${this.state.currUser.name} - All Transactions`} />
+                title={`${this.state.currUser.userName} - All Transactions`} />
             </div>
           </div>
         }

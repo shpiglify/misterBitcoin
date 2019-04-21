@@ -20,7 +20,7 @@ class HomePage extends Component {
     addItem = () => this.props.store.todoStore.addToto('lala')
 
     render() {
-        var currUserName = this.props.store.userStore.getCurrUser.name;
+        var currUserName = this.props.store.userStore.getCurrUser.userName;
         return (
             <section>
                 <h1>Home Page</h1>

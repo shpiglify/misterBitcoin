@@ -20,8 +20,9 @@ class Router extends Component {
   }
 
   render() {
-    var currUserName = (AppStore.userStore.getCurrUser) ? AppStore.userStore.getCurrUser.name : '';
-    var isLogin = currUserName ? true : false;
+    const { userName: currUserName } = AppStore.userStore.getCurrUser || {};
+    const isLogin = !!currUserName;
+
     return (
       <HashRouter>
         <nav className="nav-menu">
@@ -57,7 +58,7 @@ class Router extends Component {
           <Route exact path="/statistic" component={StatisticPage} />
           <Route path="/contact/edit/:id?" component={ContactEditPage} />
           <Route path="/contact/:id" component={ContactDetailsPage} />
-          <Route path="/user/:name?" component={UserDetailsPage} />
+          <Route path="/user/:userName?" component={UserDetailsPage} />
         </Switch>
       </HashRouter>
     );

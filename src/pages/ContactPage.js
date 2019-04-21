@@ -19,7 +19,7 @@ export default class ContactPage extends Component {
 
     filterContacts = (stringToFilter) => {
         const filterdContacts = this.state.contacts.filter(contact => {
-            return contact.name.toLowerCase().includes(stringToFilter.toLowerCase())
+            return contact.userName.toLowerCase().includes(stringToFilter.toLowerCase())
         })
         this.setState({
             contactsToShow: filterdContacts,

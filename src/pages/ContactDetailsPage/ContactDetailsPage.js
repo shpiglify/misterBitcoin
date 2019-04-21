@@ -66,7 +66,7 @@ class ContactDetailsPage extends Component {
 
                     {this.state.contact &&
                         <div className="details">
-                            <div>Name: {this.state.contact.name}</div>
+                            <div>Name: {this.state.contact.userName}</div>
                             <div>Phone: {this.state.contact.phone}</div>
                             <div>Email: {this.state.contact.email}</div>
                             <div>Coins: {this.state.contact.coins}</div>
@@ -90,7 +90,7 @@ class ContactDetailsPage extends Component {
 
                 <TransferFund contact={this.state.contact} onTransferCoins={this.addNewMove} />
                 <MovesList moves={this.state.moves}
-                    title={`${this.state.contact && this.state.contact.name} - Transactions`} />
+                    title={`${this.state.contact && this.state.contact.userName} - Transactions`} />
 
             </div>
         )

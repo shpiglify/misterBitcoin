@@ -1,133 +1,133 @@
 const contacts = [
   {
     "_id": "5a56640269f443a5d64b32ca",
-    "name": "Ron",
+    "userName": "Ron",
     "email": "ochoahyde@renovize.com",
     "phone": "+1 (968) 593-3824",
     "img": "assets/img/profiles/ron.png"
   },
   {
     "_id": "5a5664025f6ae9aa24a99fde",
-    "name": "Jonatan",
+    "userName": "Jonatan",
     "email": "halliemclean@renovize.com",
     "phone": "+1 (948) 464-2888",
     "img": "assets/img/profiles/jonatan.png"
   },
   {
     "_id": "5a56640252d6acddd183d319",
-    "name": "Hadas",
+    "userName": "Hadas",
     "email": "parsonsnorris@renovize.com",
     "phone": "+1 (958) 502-3495",
     "img": "assets/img/profiles/hadas.png"
   },
   {
     "_id": "5a566402ed1cf349f0b47b4d",
-    "name": "Yaron",
+    "userName": "Yaron",
     "email": "rachellowe@renovize.com",
     "phone": "+1 (911) 475-2312",
     "img": "assets/img/profiles/yaron.png"
   },
   {
     "_id": "5a566402abce24c6bfe4699d",
-    "name": "Itamar",
+    "userName": "Itamar",
     "email": "dominiquesoto@renovize.com",
     "phone": "+1 (807) 551-3258",
     "img": "assets/img/profiles/itamar.png"
   },
   {
     "_id": "5a566402a6499c1d4da9220a",
-    "name": "Shiri",
+    "userName": "Shiri",
     "email": "shanapope@renovize.com",
     "phone": "+1 (970) 527-3082",
     "img": "assets/img/profiles/shiri.png"
   },
   {
     "_id": "5a566402f90ae30e97f990db",
-    "name": "Natalia",
+    "userName": "Natalia",
     "email": "faulknerflores@renovize.com",
     "phone": "+1 (952) 501-2678",
     "img": "assets/img/profiles/natalia.png"
   },
   {
     "_id": "5a5664027bae84ef280ffbdf",
-    "name": "Ofir",
+    "userName": "Ofir",
     "email": "holderbean@renovize.com",
     "phone": "+1 (989) 503-2663",
     "img": "assets/img/profiles/ofir.png"
   },
   {
     "_id": "5a566402e3b846c5f6aec652",
-    "name": "Alex",
+    "userName": "Alex",
     "email": "rosanneshelton@renovize.com",
     "phone": "+1 (968) 454-3851",
     "img": "assets/img/profiles/alex.png"
   },
   {
     "_id": "5a56640272c7dcdf59c3d411",
-    "name": "Olga",
+    "userName": "Olga",
     "email": "pamelanolan@renovize.com",
     "phone": "+1 (986) 545-2166",
     "img": "assets/img/profiles/olga.png"
   },
   {
     "_id": "5a5664029a8dd82a6178b15f",
-    "name": "Moshe",
+    "userName": "Moshe",
     "email": "roycantu@renovize.com",
     "phone": "+1 (929) 571-2295",
     "img": "assets/img/profiles/moshe.png"
   },
   {
     "_id": "5a5664028c096d08eeb13a8a",
-    "name": "Jonatan",
+    "userName": "Jonatan",
     "email": "olliechristian@renovize.com",
     "phone": "+1 (977) 419-3550",
     "img": "assets/img/profiles/jonatan2.png"
   },
   {
     "_id": "5a5664026c53582bb9ebe9d1",
-    "name": "Maor",
+    "userName": "Maor",
     "email": "nguyenwalls@renovize.com",
     "phone": "+1 (963) 471-3181",
     "img": "assets/img/profiles/maor.png"
   },
   {
     "_id": "5a56640298ab77236845b82b",
-    "name": "Eitan",
+    "userName": "Eitan",
     "email": "glennasantana@renovize.com",
     "phone": "+1 (860) 467-2376",
     "img": "assets/img/profiles/eitan.png"
   },
   {
     "_id": "5a56640208fba3e8ecb97305",
-    "name": "Niv",
+    "userName": "Niv",
     "email": "maloneclark@renovize.com",
     "phone": "+1 (818) 565-2557",
     "img": "assets/img/profiles/niv.png"
   },
   {
     "_id": "5a566402abb3146207bc4ec5",
-    "name": "Omer",
+    "userName": "Omer",
     "email": "floydrutledge@renovize.com",
     "phone": "+1 (807) 597-3629",
     "img": "assets/img/profiles/omer.png"
   },
   {
     "_id": "5a56640298500fead8cb1ee5",
-    "name": "Sarel",
+    "userName": "Sarel",
     "email": "gracejames@renovize.com",
     "phone": "+1 (959) 525-2529",
     "img": "assets/img/profiles/sarel.png"
   },
   {
     "_id": "5a56640243427b8f8445231e",
-    "name": "Tatiana",
+    "userName": "Tatiana",
     "email": "tannergates@renovize.com",
     "phone": "+1 (978) 591-2291",
     "img": "assets/img/profiles/tatiana.png"
   },
   {
     "_id": "5a5664025c3abdad6f5e098c",
-    "name": "Yanai",
+    "userName": "Yanai",
     "email": "lillyconner@renovize.com",
     "phone": "+1 (842) 587-3812",
     "img": "assets/img/profiles/yanai.png"
@@ -136,10 +136,10 @@ const contacts = [
 
 function sort(arr) {
   return arr.sort((a, b) => {
-    if (a.name.toLocaleLowerCase() < b.name.toLocaleLowerCase()) {
+    if (a.userName.toLocaleLowerCase() < b.userName.toLocaleLowerCase()) {
       return -1;
     }
-    if (a.name.toLocaleLowerCase() > b.name.toLocaleLowerCase()) {
+    if (a.userName.toLocaleLowerCase() > b.userName.toLocaleLowerCase()) {
       return 1;
     }
     return 0;
@@ -197,7 +197,7 @@ function saveContact(contact) {
 
 function getEmptyContact() {
   return {
-    name: '',
+    userName: '',
     email: '',
     phone: ''
   }
@@ -206,7 +206,7 @@ function getEmptyContact() {
 function filter(term) {
   term = term.toLocaleLowerCase()
   return contacts.filter(contact => {
-    return contact.name.toLocaleLowerCase().includes(term) ||
+    return contact.userName.toLocaleLowerCase().includes(term) ||
       contact.phone.toLocaleLowerCase().includes(term) ||
       contact.email.toLocaleLowerCase().includes(term)
   })

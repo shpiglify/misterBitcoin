@@ -12,6 +12,7 @@ class UserModule {
     login(credentials) {
         return UserService.login(credentials)
             .then((user) => {
+                console.log('setting user', { user })
                 this.setUser(user)
             })
     }

@@ -45,6 +45,7 @@ function login({ userName, password }) {
     const userStorage = gUsers.find((user) => user.userName === userName && user.password === password)
 
     if (userStorage) {
+        console.log('great login', { userStorage })
         gUser = userStorage;
         StorageService.store(USER_KEY, gUser);
         return Promise.resolve(gUser);

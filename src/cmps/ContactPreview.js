@@ -17,7 +17,7 @@ class ContactPreview extends Component {
 	render() {
 		// var urlImg = `${this.props.contact.img}`;
 		var urlImg = `${this.props.contact.img}`;
-		var userName = `${this.props.contact.name}`;
+		var userName = `${this.props.contact.userName}`;
 		return (
 			<Link to={`/contact/${this.props.contact._id}`} >
 				<li>
@@ -31,7 +31,7 @@ class ContactPreview extends Component {
 						<img height="26" src={editImg} title="Edit"
 							onClick={(ev) => this.editClicked(ev)} alt="" />
 					</div>
-					<div>{this.props.contact.name}</div>
+					<div>{this.props.contact.userName}</div>
 				</li>
 			</Link>
 		)

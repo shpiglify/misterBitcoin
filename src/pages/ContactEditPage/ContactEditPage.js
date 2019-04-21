@@ -24,7 +24,7 @@ class ContactEditPage extends Component {
 
   setName = (ev) => {
     var contact = { ...this.state.contact };
-    contact.name = ev.target.value;
+    contact.userName = ev.target.value;
     this.setState({ contact, isNameValid: true });
   }
 
@@ -42,7 +42,7 @@ class ContactEditPage extends Component {
 
   handleSubmit = (ev) => {
     ev.preventDefault();
-    if (this.state.contact.name === '') {
+    if (this.state.contact.userName === '') {
       this.setState({ isNameValid: false })
     } else {
       this.setState({ isNameValid: true })
@@ -111,7 +111,7 @@ class ContactEditPage extends Component {
           }
           {!this.state.isAddNew &&
             <form onSubmit={this.handleSubmit} className="contact-form flex flex-col">
-              Name: <input onChange={this.setName} value={this.state.contact.name}
+              Name: <input onChange={this.setName} value={this.state.contact.userName}
                 type="text" placeholder="Contact Name" />
               Email: <input onChange={this.setEmail} value={this.state.contact.email}
                 type="email" placeholder="Email" />

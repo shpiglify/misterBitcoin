@@ -21,7 +21,7 @@ export default class HomePage extends Component {
         this.setState({
             chart1: {
                 data: marketChart.values.map(val => val.y),
-                title: marketChart.name,
+                title: marketChart.userName,
                 description: marketChart.description,
                 color: '#feb236'
             }

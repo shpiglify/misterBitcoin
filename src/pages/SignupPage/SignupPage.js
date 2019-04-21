@@ -18,6 +18,7 @@ class SignupPage extends Component {
   }
   
   handleLogin = () => {
+    console.log('login')
     const { userName, password } = this.state
     const credentials = { userName, password }
 
@@ -28,6 +29,7 @@ class SignupPage extends Component {
   }
 
   handleSignup = () => {
+    console.log('sign up')
     const { userName, password } = this.state
     const credentials = { userName, password }
 

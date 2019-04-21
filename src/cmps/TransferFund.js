@@ -11,27 +11,14 @@ export default class TransferFund extends Component {
         ev.preventDefault();
         this.props.onTransferCoins(this.props.contact, this.state.moneyToSend)
     }
-    render() {
-        return (
-            <section>
-                <p>Give Some Coins to {this.props.contact && this.props.contact.name}</p>
-                Amount &nbsp;
+    render = () => (
+        <section>
+            <p>Give Some Coins to {this.props.contact && this.props.contact.userName}</p>
+            Amount &nbsp;
                 <form>
-                    <input onChange={this.setCoins} type="number" />
-                    <button onClick={this.sendMoney}>Send</button>
-                </form>
-            </section>
-        )
-    }
+                <input onChange={this.setCoins} type="number" />
+                <button onClick={this.sendMoney}>Send</button>
+            </form>
+        </section>
+    )
 }
-
-// const TransferFund = ({ contact }) => (
-//     <section>
-//         <h2>TransferFund cmp</h2>
-//         <p>Give Some Coins to {contact && contact.name}</p>
-//         Amount <input type="text" />
-//         <button>Send</button>
-//     </section>
-// )
-
-// export default TransferFund;
