@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import { Link, withRouter } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import ContactService from '../../services/ContactService';
 import binImg from '../../assets/img/icons/bin.png';
-import backImg from '../../assets/img/icons/back-arrow.png';
 import './ContactEditPage.scss'
 
 class ContactEditPage extends Component {
@@ -57,9 +56,8 @@ class ContactEditPage extends Component {
       .then(() => this.props.history.push(`/contact`))
   }
 
-  goOneBack = (ev) => {
-    ev.preventDefault()
-    this.props.history.go(-1)
+  goToContacts = () => {
+    this.props.history.push('/contact')
   }
 
   render() {
@@ -71,58 +69,49 @@ class ContactEditPage extends Component {
     if (this.state.contact) {
       urlImg = `${this.state.contact.img}`;
     }
+
     return (
-      <div>
-        <div className="contact-container">
+      <div className="contact-container">
+        <header className="small-header">
+          <button onClick={this.goToContacts}>Back</button>
+        </header>
 
-          {this.state.isAddNew ?
-            <div className="options-edit">
-              <h3>Add New</h3>
+        <img
+          className="img-profile"
+          height="60"
+          src="/assets/img/profiles/profile-placeholder.jpg"
+          alt=""
+        />
 
-              <img height="30" src={backImg} alt="" title="Back"
-                onClick={(ev) => { this.goOneBack(ev) }} />
+        {!this.state.isAddNew && (
+          <>
+            <img height="26" src={binImg} title="Delete" alt=""
+              onClick={(ev) => this.removeContact(ev, this.state.contact._id)} />
+          </>
+        )}
 
-            </div>
-            :
-            <div className="options-edit">
-              <h3>Edit Contact</h3>
-              <Link to={`/contact/${this.state.contact._id}`}>
-                <img height="30" src={backImg} alt="" title="Back to Details" />
-              </Link>
+        {this.state.isAddNew &&
+          <form onSubmit={this.handleSubmit} className="contact-form flex flex-col">
+            <input onChange={this.setName} type="text" placeholder="Contact Name" />
+            <input onChange={this.setEmail} type="email" placeholder="Email" />
+            <input onChange={this.setPhone} type="tel" placeholder="Phone Number" />
 
-              <img height="26" src={binImg} title="Delete" alt=""
-                onClick={(ev) => this.removeContact(ev, this.state.contact._id)} />
+            <button className="btn-full">Create!</button>
+          </form>
+        }
+        {!this.state.isAddNew &&
+          <form onSubmit={this.handleSubmit} className="contact-form flex flex-col">
+            <input onChange={this.setName} value={this.state.contact.userName}
+              type="text" placeholder="Contact Name" />
+            <input onChange={this.setEmail} value={this.state.contact.email}
+              type="email" placeholder="Email" />
+            <input onChange={this.setPhone} value={this.state.contact.phone}
+              type="tel" placeholder="Phone Number" />
 
-            </div>
-          }
-
-          <div>
-            <img height="100" src={urlImg} alt="" />
-          </div>
-
-          {this.state.isAddNew &&
-            <form onSubmit={this.handleSubmit} className="contact-form flex flex-col">
-              Name: <input onChange={this.setName} type="text" placeholder="Contact Name" />
-              Email: <input onChange={this.setEmail} type="email" placeholder="Email" />
-              Phone: <input onChange={this.setPhone} type="tel" placeholder="Phone Number" />
-
-              <input type="submit" value="Create!" />
-            </form>
-          }
-          {!this.state.isAddNew &&
-            <form onSubmit={this.handleSubmit} className="contact-form flex flex-col">
-              Name: <input onChange={this.setName} value={this.state.contact.userName}
-                type="text" placeholder="Contact Name" />
-              Email: <input onChange={this.setEmail} value={this.state.contact.email}
-                type="email" placeholder="Email" />
-              Phone: <input onChange={this.setPhone} value={this.state.contact.phone}
-                type="tel" placeholder="Phone Number" />
-
-              <input type="submit" value="Update!" />
-            </form>
-          }
-          {nameError}
-        </div>
+            <button className="btn-full">Update!</button>
+          </form>
+        }
+        {nameError}
       </div>
     )
   }

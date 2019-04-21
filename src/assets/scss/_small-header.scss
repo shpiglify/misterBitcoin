@@ -1,0 +1,17 @@
+@import "./vars";
+
+.small-header {
+  display: flex;
+  height: 36px;
+  width: 100%;
+  background-color: $clr6;
+  color: $text-primary;
+  margin-bottom: 32px;
+}
+
+.small-header button {
+  background-color: $clr6;
+  border-radius: 0;
+  color: $text-primary;
+  padding: 0 16px;
+}

@@ -1,19 +1,20 @@
-.user-details {
-  margin: 10px 20px 0 20px;
-  .user-img {
-    flex-grow: 1;
-  }
-  .details {
-    flex-grow: 1;
-    margin: auto;
-    text-align: left;
-  }
-}
+@import '../../assets//scss/vars';
 
-.options {
-  width: 200px;
-  margin: 10px auto;
-  img {
-    cursor: pointer;
+.contact-details {
+  h1, h2 {
+    margin: 0;
+    font-weight: normal;
+  }
+
+  h1 {
+    color: $primary-color;
+    margin-bottom: 8px;
+    font-size: 36px;
+    letter-spacing: 3px;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin-bottom: 8px;
   }
 }

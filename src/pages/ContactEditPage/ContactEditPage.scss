@@ -1,40 +1,13 @@
-.options-edit {
-  img {
-    cursor: pointer;
-    margin: 4px 20px;
-  }
-}
-
-.contact-container {
-  max-width: 80%;
-  margin: 0 auto;
-}
+@import "../../assets/scss/vars";
 
 .contact-container > p {
   margin: 6px 0;
 }
 
-.contact-form > input:not(:last-child) {
-  margin-bottom: 6px;
-  font-size: 1.1em;
-  padding: 4px;
-  border: 1px solid #616161;
+.contact-form {
+  margin: 0 16px;
 }
 
-.contact-form > input:last-child {
-  cursor: pointer;
-  margin: 14px 0 4px 0;
-  font-size: 1.1em;
-  padding: 4px 0;
-  border: none;
-  background-color: rgb(255, 161, 73);
-  transition: background-color 0.3s;
-}
-.contact-form > input:last-child:hover {
-  background-color: rgb(248, 153, 64);
-}
-
-.contact-form > input:not(:last-child):focus {
-  background-color: rgb(255, 243, 231);
-  outline: 1px solid rgba(0, 0, 0, 0);
+.contact-form input:not(:last-child) {
+  margin-bottom: 16px;
 }
