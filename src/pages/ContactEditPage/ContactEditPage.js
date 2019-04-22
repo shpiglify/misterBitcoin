@@ -84,10 +84,13 @@ class ContactEditPage extends Component {
         />
 
         {!this.state.isAddNew && (
-          <>
-            <img height="26" src={binImg} title="Delete" alt=""
-              onClick={(ev) => this.removeContact(ev, this.state.contact._id)} />
-          </>
+          <div className="delete">
+          <button title="Delete" onClick={(ev) => this.removeContact(ev, this.state.contact._id)}>🗑</button>
+          </div>
+          // <>
+          //   <img height="26" src={binImg} title="Delete" alt=""
+          //     onClick={(ev) => this.removeContact(ev, this.state.contact._id)} />
+          // </>
         )}
 
         {this.state.isAddNew &&

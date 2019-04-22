@@ -19,7 +19,7 @@ export default class TransferFund extends Component {
         <section className="transfer-fund">
             <form>
                 <input onChange={this.setCoins} type="number" />
-                <button className="btn-full" onClick={this.sendMoney}>Send</button>
+                <button className="btn-full" onClick={this.sendMoney}>Transfer</button>
             </form>
         </section>
     )

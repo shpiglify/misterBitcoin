@@ -8,9 +8,9 @@ const Nav = (props) => (
       <>
         <div>
           <NavLink exact className="nav-link" to="/" activeClassName="activeRoute">🏠</NavLink>
-          <NavLink className="nav-link" to="/contact" activeClassName="activeRoute">📞</NavLink>
-          <NavLink className="nav-link" to="/statistic" activeClassName="activeRoute">📈</NavLink>
-          <NavLink className="nav-link" to="/user" activeClassName="activeRoute">🧑🏻</NavLink>
+          <NavLink className="nav-link" to="/contact" activeClassName="activeRoute">👥</NavLink>
+          {/* <NavLink className="nav-link" to="/statistic" activeClassName="activeRoute">📈</NavLink> */}
+          <NavLink className="nav-link" to="/user" activeClassName="activeRoute">📓</NavLink>
         </div>
         <button
           onClick={() => {

@@ -1,6 +1,32 @@
 @import '../../assets//scss/vars';
 
+.delete{
+  transform: translate(-16px,-155px);
+  display:flex;
+  justify-content: flex-end;
+  
+  font-weight: 700;
+  button{
+    font-size: 20px;
+  }
+  button:hover{
+    background-color:rgb(128, 0, 0);
+    color:white;
+  }
+}
 .contact-details {
+  .small-header{
+    display:flex;
+    justify-content:space-between;
+    a{
+      button{
+        height: 100%;
+      }
+    }
+
+  }
+  
+
   h1, h2 {
     margin: 0;
     font-weight: normal;

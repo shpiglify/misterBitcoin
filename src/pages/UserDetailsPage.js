@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 
 // CMPS
-import MovesList from '../cmps/MovesList';
+import MovesList from '../cmps/MovesList/MovesList';
 
 // SERVISES
 import UserService from '../services/UserService';
@@ -18,12 +18,10 @@ class UserDetailsPage extends Component {
   render() {
     return (
       <div>
-        <h4>User Details Page</h4>
 
         {this.state.currUser &&
           <div>
-            <div>{this.state.currUser.userName}</div>
-            <div>{this.state.currUser.coins}</div>
+            
             <div>{this.state.currUser.coins < 0 &&
               <div>
                 <label >We've noticed that you're in a negative account.</label><br />
@@ -31,6 +29,7 @@ class UserDetailsPage extends Component {
               </div>
             }</div>
             <div>
+            <img src="/assets/img/design/coins3.png" alt="bitcoin" height="100" width="100" />
               <MovesList moves={this.state.currUser.moves}
                 title={`${this.state.currUser.userName} - All Transactions`} />
             </div>

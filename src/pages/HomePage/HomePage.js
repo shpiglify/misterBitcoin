@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { observer } from 'mobx-react';
-import MovesList from '../../cmps/MovesList';
+import MovesList from '../../cmps/MovesList/MovesList';
 import StatisticPage from '../StatisticPage';
 import BitcoinService from '../../services/BitcoinService';
 import './HomePage.scss'
@@ -51,7 +51,7 @@ class HomePage extends Component {
                 <StatisticPage/>
 
                 <MovesList moves={this.state.threeMoves}
-                    title={`Three Recent Transactions In The World`} />
+                    title={`♻ Last 3 Moves`} />
 
 
             </section>

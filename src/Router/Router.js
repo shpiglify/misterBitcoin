@@ -35,7 +35,7 @@ class Router extends Component {
           <Route exact path="/contact" component={ContactPage} />
           <Route exact path="/statistic" component={StatisticPage} />
           <Route path="/contact/edit/:id?" component={ContactEditPage} />
-          <Route path="/contact/:id" component={ContactDetailsPage} />
+          <Route path="/contact/:id" render={()=><ContactDetailsPage UserStore={AppStore.userStore}/>} />
           <Route path="/user/:userName?" component={UserDetailsPage} />
         </Switch>
       </HashRouter>

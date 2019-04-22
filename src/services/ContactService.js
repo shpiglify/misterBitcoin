@@ -1,7 +1,7 @@
 const contacts = [
   {
     "_id": "5a56640269f443a5d64b32ca",
-    "userName": "Ron",
+    "userName": "Lori Guerrero",
     "email": "ochoahyde@renovize.com",
     "phone": "+1 (968) 593-3824",
     "img": "assets/img/profiles/ron.png",
@@ -9,7 +9,7 @@ const contacts = [
   },
   {
     "_id": "5a5664025f6ae9aa24a99fde",
-    "userName": "Jonatan",
+    "userName": "Amanda Lynch",
     "email": "halliemclean@renovize.com",
     "phone": "+1 (948) 464-2888",
     "img": "assets/img/profiles/jonatan.png",
@@ -17,7 +17,7 @@ const contacts = [
   },
   {
     "_id": "5a56640252d6acddd183d319",
-    "userName": "Hadas",
+    "userName": "Brenda Morris",
     "email": "parsonsnorris@renovize.com",
     "phone": "+1 (958) 502-3495",
     "img": "assets/img/profiles/hadas.png",
@@ -25,7 +25,7 @@ const contacts = [
   },
   {
     "_id": "5a566402ed1cf349f0b47b4d",
-    "userName": "Yaron",
+    "userName": "Ryan Larson",
     "email": "rachellowe@renovize.com",
     "phone": "+1 (911) 475-2312",
     "img": "assets/img/profiles/yaron.png",
@@ -33,7 +33,7 @@ const contacts = [
   },
   {
     "_id": "5a566402abce24c6bfe4699d",
-    "userName": "Itamar",
+    "userName": "Eric Moore",
     "email": "dominiquesoto@renovize.com",
     "phone": "+1 (807) 551-3258",
     "img": "assets/img/profiles/itamar.png",
@@ -41,7 +41,7 @@ const contacts = [
   },
   {
     "_id": "5a566402a6499c1d4da9220a",
-    "userName": "Shiri",
+    "userName": "Jane Meyer",
     "email": "shanapope@renovize.com",
     "phone": "+1 (970) 527-3082",
     "img": "assets/img/profiles/shiri.png",
@@ -49,7 +49,7 @@ const contacts = [
   },
   {
     "_id": "5a566402f90ae30e97f990db",
-    "userName": "Natalia",
+    "userName": "Angela Newman",
     "email": "faulknerflores@renovize.com",
     "phone": "+1 (952) 501-2678",
     "img": "assets/img/profiles/natalia.png",
@@ -57,7 +57,7 @@ const contacts = [
   },
   {
     "_id": "5a5664027bae84ef280ffbdf",
-    "userName": "Ofir",
+    "userName": "Sharon Wood",
     "email": "holderbean@renovize.com",
     "phone": "+1 (989) 503-2663",
     "img": "assets/img/profiles/ofir.png",
@@ -65,7 +65,7 @@ const contacts = [
   },
   {
     "_id": "5a566402e3b846c5f6aec652",
-    "userName": "Alex",
+    "userName": "Samantha Mendez",
     "email": "rosanneshelton@renovize.com",
     "phone": "+1 (968) 454-3851",
     "img": "assets/img/profiles/alex.png",
@@ -73,7 +73,7 @@ const contacts = [
   },
   {
     "_id": "5a56640272c7dcdf59c3d411",
-    "userName": "Olga",
+    "userName": "Evelyn Fuller",
     "email": "pamelanolan@renovize.com",
     "phone": "+1 (986) 545-2166",
     "img": "assets/img/profiles/olga.png",
@@ -81,7 +81,7 @@ const contacts = [
   },
   {
     "_id": "5a5664029a8dd82a6178b15f",
-    "userName": "Moshe",
+    "userName": "Steven Black",
     "email": "roycantu@renovize.com",
     "phone": "+1 (929) 571-2295",
     "img": "assets/img/profiles/moshe.png",
@@ -89,7 +89,7 @@ const contacts = [
   },
   {
     "_id": "5a5664028c096d08eeb13a8a",
-    "userName": "Jonatan",
+    "userName": "Angela Wilson",
     "email": "olliechristian@renovize.com",
     "phone": "+1 (977) 419-3550",
     "img": "assets/img/profiles/jonatan2.png",
@@ -97,7 +97,7 @@ const contacts = [
   },
   {
     "_id": "5a5664026c53582bb9ebe9d1",
-    "userName": "Maor",
+    "userName": "Janet Cook",
     "email": "nguyenwalls@renovize.com",
     "phone": "+1 (963) 471-3181",
     "img": "assets/img/profiles/maor.png",
@@ -105,7 +105,7 @@ const contacts = [
   },
   {
     "_id": "5a56640298ab77236845b82b",
-    "userName": "Eitan",
+    "userName": "Laura Hall",
     "email": "glennasantana@renovize.com",
     "phone": "+1 (860) 467-2376",
     "img": "assets/img/profiles/eitan.png",
@@ -113,7 +113,7 @@ const contacts = [
   },
   {
     "_id": "5a56640208fba3e8ecb97305",
-    "userName": "Niv",
+    "userName": "Russell Perkins",
     "email": "maloneclark@renovize.com",
     "phone": "+1 (818) 565-2557",
     "img": "assets/img/profiles/niv.png",
@@ -121,7 +121,7 @@ const contacts = [
   },
   {
     "_id": "5a566402abb3146207bc4ec5",
-    "userName": "Omer",
+    "userName": "Doris Barrett",
     "email": "floydrutledge@renovize.com",
     "phone": "+1 (807) 597-3629",
     "img": "assets/img/profiles/omer.png",
@@ -129,7 +129,7 @@ const contacts = [
   },
   {
     "_id": "5a56640298500fead8cb1ee5",
-    "userName": "Sarel",
+    "userName": "Billy Ward",
     "email": "gracejames@renovize.com",
     "phone": "+1 (959) 525-2529",
     "img": "assets/img/profiles/sarel.png",
@@ -137,7 +137,7 @@ const contacts = [
   },
   {
     "_id": "5a56640243427b8f8445231e",
-    "userName": "Tatiana",
+    "userName": "Terry Munoz",
     "email": "tannergates@renovize.com",
     "phone": "+1 (978) 591-2291",
     "img": "assets/img/profiles/tatiana.png",
@@ -145,7 +145,7 @@ const contacts = [
   },
   {
     "_id": "5a5664025c3abdad6f5e098c",
-    "userName": "Yanai",
+    "userName": "Kathryn Long",
     "email": "lillyconner@renovize.com",
     "phone": "+1 (842) 587-3812",
     "img": "assets/img/profiles/yanai.png",

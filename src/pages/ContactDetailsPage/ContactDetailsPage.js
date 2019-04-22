@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { Link, withRouter } from 'react-router-dom';
 
 // CMPS
-import MovesList from '../../cmps/MovesList';
+import MovesList from '../../cmps/MovesList/MovesList';
 import TransferFund from '../../cmps/TransferFund/TransferFund';
 
 // SERVISES
@@ -26,6 +26,7 @@ class ContactDetailsPage extends Component {
 	addNewMove = (contact, amount) => {
 		UserService.addMove(contact, amount)
 			.then((newMove) => {
+				this.props.UserStore.currUser.coins = this.props.UserStore.currUser.coins -amount
 				var updateMoves = this.state.moves;
 				updateMoves.unshift(newMove);
 				this.setState({
@@ -36,8 +37,14 @@ class ContactDetailsPage extends Component {
 	goToContacts = () => {
 		this.props.history.push(`/contact`)
 	}
+	removeContact = (ev, id) => {
+		ev.preventDefault()
+		ContactService.deleteContact(id)
+		  .then(() => this.props.history.push(`/contact`))
+	}
 
 	render() {
+		console.log(this.props.UserStore.currUser.coins)
 		var urlImg;
 		if (this.state.contact) {
 			urlImg = `${this.state.contact.img}`;
@@ -46,8 +53,15 @@ class ContactDetailsPage extends Component {
 			<div className="contact-details">
 				<header className="small-header">
 					<button onClick={this.goToContacts}>Back</button>
+				
+				{this.state.contact &&
+				<Link to={`/contact/edit/${this.state.contact._id}`}>
+                           <button>Edit</button>
+                </Link>
+				}
 				</header>
 
+				
 				<img
 					className="img-profile"
 					height="60"
@@ -61,9 +75,7 @@ class ContactDetailsPage extends Component {
 							<h1>{this.state.contact.userName}</h1>
 							<h2>{this.state.contact.phone}</h2>
 							<div>{this.state.contact.email}</div>
-							{this.state.contact.coins && (
-								<div className="coin-counter">💰 {this.state.contact.coins}</div>
-							)}
+							
 						</div>
 					}
 				</div>
@@ -71,7 +83,7 @@ class ContactDetailsPage extends Component {
 				<TransferFund contact={this.state.contact} onTransferCoins={this.addNewMove} />
 				<MovesList
 					moves={this.state.moves}
-					title={`${this.state.contact && this.state.contact.userName} - Transactions`}
+					title={`♻ Moves HIstory`}
 				/>
 			</div>
 		)
