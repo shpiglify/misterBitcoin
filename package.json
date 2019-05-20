@@ -1,5 +1,5 @@
 {
-  "homepage": "https://omergal99.github.io/react-bitCoin",
+  "homepage": "https://shpiglify.github.io/mister-bitCoin",
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
@@ -7,8 +7,8 @@
     "axios": "^0.18.0",
     "gh-pages": "^2.0.1",
     "mobx": "^5.9.4",
-    "mobx-react": "^5.4.3",
-    "node-sass": "^4.11.0",
+    "mobx-react": "^5.4.4",
+    "node-sass": "^4.12.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",
@@ -21,8 +21,7 @@
     "start": "serve -s build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "heroku-postbuild": "npm run build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
