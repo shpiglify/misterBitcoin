@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import ContactPreview from '../ContactPreview/ContactPreview';
-import newUser from '../../assets/img/icons/new-user.png';
 import './ContactList.scss'
 
 export default class ContactList extends Component {

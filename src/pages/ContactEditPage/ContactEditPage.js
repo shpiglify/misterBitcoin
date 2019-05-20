@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import ContactService from '../../services/ContactService';
-import binImg from '../../assets/img/icons/bin.png';
 import './ContactEditPage.scss'
+import profileImg from '../../assets/img/profiles/profile-placeholder.jpg';
+
 
 class ContactEditPage extends Component {
   state = {
@@ -79,7 +80,7 @@ class ContactEditPage extends Component {
         <img
           className="img-profile"
           height="60"
-          src="/assets/img/profiles/profile-placeholder.jpg"
+          src={profileImg}
           alt=""
         />
 

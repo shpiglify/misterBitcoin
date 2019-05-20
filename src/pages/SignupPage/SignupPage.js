@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { observer } from 'mobx-react';
 import { withRouter } from 'react-router-dom';
 import './SignupPage.scss';
+import walletImg from '../../assets/img/design/wallet.png';
+
 
 class SignupPage extends Component {
   state = {
@@ -40,7 +42,7 @@ class SignupPage extends Component {
   render = () => (
     <div className="signup-page">
       <h1>Welcome To Bitcoin Wallet !</h1>
-      <img src="/assets/img/design/wallet.png" alt="bitcoin" height="100" width="100" />
+      <img src={walletImg} alt="bitcoin" height="100" width="100" />
 
       <form className="signup-form">
         <input onChange={this.handleOnUserNameChange} placeholder="User Name" />

@@ -11,6 +11,9 @@ import ContactService from '../../services/ContactService';
 import UserService from '../../services/UserService';
 import './ContactDetailsPage.scss'
 
+import profileImg from '../../assets/img/profiles/profile-placeholder.jpg';
+
+
 class ContactDetailsPage extends Component {
 	state = {
 		contact: null,
@@ -65,7 +68,7 @@ class ContactDetailsPage extends Component {
 				<img
 					className="img-profile"
 					height="60"
-					src="/assets/img/profiles/profile-placeholder.jpg"
+					src={profileImg}
 					alt=""
 				/>
 

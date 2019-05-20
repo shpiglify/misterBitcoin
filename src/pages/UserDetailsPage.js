@@ -8,6 +8,8 @@ import MovesList from '../cmps/MovesList/MovesList';
 // SERVISES
 import UserService from '../services/UserService';
 
+import coinsImg from '../assets/img/design/coins3.png'
+
 class UserDetailsPage extends Component {
   state = {
     currUser: null,
@@ -29,7 +31,7 @@ class UserDetailsPage extends Component {
               </div>
             }</div>
             <div>
-            <img src="/assets/img/design/coins3.png" alt="bitcoin" height="100" width="100" />
+            <img src={coinsImg} alt="bitcoin" height="100" width="100" />
               <MovesList moves={this.state.currUser.moves}
                 title={`${this.state.currUser.userName} - All Transactions`} />
             </div>
