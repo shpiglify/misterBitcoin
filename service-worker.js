@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/react-bitCoin/precache-manifest.69d1e989d8f4dcf6a106ad2c2bab840c.js"
+  "/misterBitCoin/precache-manifest.9a7fa54f094cba62417e6721f511ebf9.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/react-bitCoin/index.html", {
+workbox.routing.registerNavigationRoute("/misterBitCoin/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
