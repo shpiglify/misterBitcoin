@@ -1,15 +1,15 @@
 {
-  "main.css": "/misterBitCoin/static/css/main.6863898a.chunk.css",
-  "main.js": "/misterBitCoin/static/js/main.53cb1587.chunk.js",
-  "main.js.map": "/misterBitCoin/static/js/main.53cb1587.chunk.js.map",
-  "runtime~main.js": "/misterBitCoin/static/js/runtime~main.15359c49.js",
-  "runtime~main.js.map": "/misterBitCoin/static/js/runtime~main.15359c49.js.map",
-  "static/js/2.b6e80572.chunk.js": "/misterBitCoin/static/js/2.b6e80572.chunk.js",
-  "static/js/2.b6e80572.chunk.js.map": "/misterBitCoin/static/js/2.b6e80572.chunk.js.map",
-  "index.html": "/misterBitCoin/index.html",
-  "precache-manifest.9a7fa54f094cba62417e6721f511ebf9.js": "/misterBitCoin/precache-manifest.9a7fa54f094cba62417e6721f511ebf9.js",
-  "service-worker.js": "/misterBitCoin/service-worker.js",
-  "static/css/main.6863898a.chunk.css.map": "/misterBitCoin/static/css/main.6863898a.chunk.css.map",
-  "static/media/index.scss": "/misterBitCoin/static/media/Quando-Regular.849e6795.ttf",
-  "static/media/edit.png": "/misterBitCoin/static/media/edit.d60c9648.png"
+  "main.css": "/misterBitcoin/static/css/main.d0b90f03.chunk.css",
+  "main.js": "/misterBitcoin/static/js/main.cdf917ba.chunk.js",
+  "main.js.map": "/misterBitcoin/static/js/main.cdf917ba.chunk.js.map",
+  "runtime~main.js": "/misterBitcoin/static/js/runtime~main.55af8474.js",
+  "runtime~main.js.map": "/misterBitcoin/static/js/runtime~main.55af8474.js.map",
+  "static/js/2.6f7798ec.chunk.js": "/misterBitcoin/static/js/2.6f7798ec.chunk.js",
+  "static/js/2.6f7798ec.chunk.js.map": "/misterBitcoin/static/js/2.6f7798ec.chunk.js.map",
+  "index.html": "/misterBitcoin/index.html",
+  "precache-manifest.63a9c6244062908c676d138ad7b649af.js": "/misterBitcoin/precache-manifest.63a9c6244062908c676d138ad7b649af.js",
+  "service-worker.js": "/misterBitcoin/service-worker.js",
+  "static/css/main.d0b90f03.chunk.css.map": "/misterBitcoin/static/css/main.d0b90f03.chunk.css.map",
+  "static/media/index.scss": "/misterBitcoin/static/media/Quando-Regular.849e6795.ttf",
+  "static/media/edit.png": "/misterBitcoin/static/media/edit.d60c9648.png"
 }
