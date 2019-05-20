@@ -1,0 +1,20 @@
+{
+  "short_name": "React App",
+  "name": "My React App Sample",
+  "icons": [
+    {
+      "src": "/team.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/team.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/react-bitCoin",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
