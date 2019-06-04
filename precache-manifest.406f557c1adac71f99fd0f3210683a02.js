@@ -4,6 +4,10 @@ self.__precacheManifest = [
     "url": "/misterBitcoin/static/media/profile-placeholder.0b9235c3.jpg"
   },
   {
+    "revision": "07f475d49ffd1b853795a734a2692d2d",
+    "url": "/misterBitcoin/static/media/coins3.07f475d4.png"
+  },
+  {
     "revision": "1e5c63dd9f5b98d30258a503a1d903eb",
     "url": "/misterBitcoin/static/media/background-blue.1e5c63dd.jpg"
   },
@@ -20,19 +24,19 @@ self.__precacheManifest = [
     "url": "/misterBitcoin/static/js/runtime~main.55af8474.js"
   },
   {
-    "revision": "79ddff6cb0c2cbb5082c",
-    "url": "/misterBitcoin/static/js/main.8cb7c34a.chunk.js"
+    "revision": "fc3446b37a7a1a0aed7f",
+    "url": "/misterBitcoin/static/js/main.6641e7f3.chunk.js"
   },
   {
-    "revision": "7e167a4bdbb5704e7e08",
-    "url": "/misterBitcoin/static/js/2.469d64e9.chunk.js"
+    "revision": "b6ebecf94af864040770",
+    "url": "/misterBitcoin/static/js/2.5e7a3736.chunk.js"
   },
   {
-    "revision": "79ddff6cb0c2cbb5082c",
-    "url": "/misterBitcoin/static/css/main.8a1819a1.chunk.css"
+    "revision": "fc3446b37a7a1a0aed7f",
+    "url": "/misterBitcoin/static/css/main.9f834785.chunk.css"
   },
   {
-    "revision": "13731321049c4d225a31687792cc1759",
+    "revision": "0180ae3c3373f90e959748e3c9e5862b",
     "url": "/misterBitcoin/index.html"
   }
 ];
