@@ -1,16 +1,15 @@
 {
-  "main.css": "/misterBitcoin/static/css/main.5623781e.chunk.css",
-  "main.js": "/misterBitcoin/static/js/main.03725222.chunk.js",
-  "main.js.map": "/misterBitcoin/static/js/main.03725222.chunk.js.map",
+  "main.css": "/misterBitcoin/static/css/main.7379f3c3.chunk.css",
+  "main.js": "/misterBitcoin/static/js/main.c01526dc.chunk.js",
+  "main.js.map": "/misterBitcoin/static/js/main.c01526dc.chunk.js.map",
   "runtime~main.js": "/misterBitcoin/static/js/runtime~main.55af8474.js",
   "runtime~main.js.map": "/misterBitcoin/static/js/runtime~main.55af8474.js.map",
-  "static/js/2.441dd51f.chunk.js": "/misterBitcoin/static/js/2.441dd51f.chunk.js",
-  "static/js/2.441dd51f.chunk.js.map": "/misterBitcoin/static/js/2.441dd51f.chunk.js.map",
+  "static/js/2.71ef6bcb.chunk.js": "/misterBitcoin/static/js/2.71ef6bcb.chunk.js",
+  "static/js/2.71ef6bcb.chunk.js.map": "/misterBitcoin/static/js/2.71ef6bcb.chunk.js.map",
   "index.html": "/misterBitcoin/index.html",
-  "precache-manifest.27039eb3e7f0c5b0a37a16dc976ea062.js": "/misterBitcoin/precache-manifest.27039eb3e7f0c5b0a37a16dc976ea062.js",
+  "precache-manifest.e8f62d1617ac859560d73da60e15beba.js": "/misterBitcoin/precache-manifest.e8f62d1617ac859560d73da60e15beba.js",
   "service-worker.js": "/misterBitcoin/service-worker.js",
-  "static/css/main.5623781e.chunk.css.map": "/misterBitcoin/static/css/main.5623781e.chunk.css.map",
+  "static/css/main.7379f3c3.chunk.css.map": "/misterBitcoin/static/css/main.7379f3c3.chunk.css.map",
   "static/media/index.scss": "/misterBitcoin/static/media/Quando-Regular.849e6795.ttf",
-  "static/media/App.scss": "/misterBitcoin/static/media/background-blue.1e5c63dd.jpg",
-  "static/media/edit.png": "/misterBitcoin/static/media/edit.d60c9648.png"
+  "static/media/App.scss": "/misterBitcoin/static/media/background-blue.1e5c63dd.jpg"
 }
