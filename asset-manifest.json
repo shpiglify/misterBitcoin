@@ -1,5 +1,5 @@
 {
-  "main.css": "/misterBitcoin/static/css/main.bf0eb5cc.chunk.css",
+  "main.css": "/misterBitcoin/static/css/main.5623781e.chunk.css",
   "main.js": "/misterBitcoin/static/js/main.03725222.chunk.js",
   "main.js.map": "/misterBitcoin/static/js/main.03725222.chunk.js.map",
   "runtime~main.js": "/misterBitcoin/static/js/runtime~main.55af8474.js",
@@ -7,9 +7,10 @@
   "static/js/2.441dd51f.chunk.js": "/misterBitcoin/static/js/2.441dd51f.chunk.js",
   "static/js/2.441dd51f.chunk.js.map": "/misterBitcoin/static/js/2.441dd51f.chunk.js.map",
   "index.html": "/misterBitcoin/index.html",
-  "precache-manifest.76e1ddb388329c927d0aa10458179b40.js": "/misterBitcoin/precache-manifest.76e1ddb388329c927d0aa10458179b40.js",
+  "precache-manifest.27039eb3e7f0c5b0a37a16dc976ea062.js": "/misterBitcoin/precache-manifest.27039eb3e7f0c5b0a37a16dc976ea062.js",
   "service-worker.js": "/misterBitcoin/service-worker.js",
-  "static/css/main.bf0eb5cc.chunk.css.map": "/misterBitcoin/static/css/main.bf0eb5cc.chunk.css.map",
+  "static/css/main.5623781e.chunk.css.map": "/misterBitcoin/static/css/main.5623781e.chunk.css.map",
   "static/media/index.scss": "/misterBitcoin/static/media/Quando-Regular.849e6795.ttf",
+  "static/media/App.scss": "/misterBitcoin/static/media/background-blue.1e5c63dd.jpg",
   "static/media/edit.png": "/misterBitcoin/static/media/edit.d60c9648.png"
 }

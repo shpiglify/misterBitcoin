@@ -4,6 +4,10 @@ self.__precacheManifest = [
     "url": "/misterBitcoin/static/media/edit.d60c9648.png"
   },
   {
+    "revision": "1e5c63dd9f5b98d30258a503a1d903eb",
+    "url": "/misterBitcoin/static/media/background-blue.1e5c63dd.jpg"
+  },
+  {
     "revision": "849e67957ea4dd5edb38eedb9d5743f1",
     "url": "/misterBitcoin/static/media/Quando-Regular.849e6795.ttf"
   },
@@ -16,7 +20,7 @@ self.__precacheManifest = [
     "url": "/misterBitcoin/static/js/runtime~main.55af8474.js"
   },
   {
-    "revision": "550c2d37eb7a114c4290",
+    "revision": "51d65891746ecbd735fa",
     "url": "/misterBitcoin/static/js/main.03725222.chunk.js"
   },
   {
@@ -24,11 +28,11 @@ self.__precacheManifest = [
     "url": "/misterBitcoin/static/js/2.441dd51f.chunk.js"
   },
   {
-    "revision": "550c2d37eb7a114c4290",
-    "url": "/misterBitcoin/static/css/main.bf0eb5cc.chunk.css"
+    "revision": "51d65891746ecbd735fa",
+    "url": "/misterBitcoin/static/css/main.5623781e.chunk.css"
   },
   {
-    "revision": "dfb6e38aa200b9d06e62f0d4fb85a638",
+    "revision": "a1b3ab27d55d9561fb8cca36bbde7a7d",
     "url": "/misterBitcoin/index.html"
   }
 ];
